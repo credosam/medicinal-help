@@ -1,0 +1,40 @@
+ <!DOCTYPE html>
+<html>
+    <head>
+        <title>Medical Dictionary</title>
+        <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css" />
+        <script src="assets/js/jquery-2.1.1.min.js"></script>
+        <style>
+            #response{
+                font-size:18px;
+                width:56%;
+                overflow: auto;
+                overflow-x:hidden;         
+                padding-bottom: 50px;
+                margin-left:16%;
+                height: 650px;
+                line-height:23px;
+                font-family:'Times New Roman';
+                color: #4D4D4D;
+            }
+            body{
+                margin-top: 15px;
+            }
+        </style>
+        <script src="../assets/js/search.js" type="text/javascript"></script>
+    </head>
+    <body>
+        <br>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class ="span1"></div>
+                <div class ="span11">
+                    <div class="span7 offset1"><input placeholder="You must have heard: An apple a day keeps the doctor away :)" class="span12" id="query" type="text">
+                    </div>
+                    <div class="span1"><button class="btn-primary btn-small" type="submit" onclick="search()">Help!!</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="response"></div>
+    </body>
+</html>
